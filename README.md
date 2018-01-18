@@ -7,3 +7,7 @@ and can be used for any calculations with other formulas
 
 fermi integrals_calculator2.m calcualtes Fermi integrals 
 using Simpsons integration method
+
+legendrePolynomials1.m calculates and generates Legendre Polynomials using Matlabs built in function and calculates its roots and weights
+
+legendrePolynomials.m  calculates and generates Legendre Polynomials using recursion and calculates its roots and weighs
