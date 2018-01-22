@@ -1,13 +1,13 @@
-%this program caclulates Fermi integrals using Gauss-Legendre method
+%this program caclulates fermi integrals using Gauss-Legendre method
 %program written by Rezo Kobaidze
 k=[0,1,2,3,4];
 key=1;
 for pow=k
    str=['fermi_integral' num2str(pow) '.dat'];
    my_f=fopen(str, "w");
-   for q=-4:1:20
+   for q=-6:0.5:26
        my_c=fopen("gauss_legandre_weights_c.dat","r");
-	     my_x=fopen("gauss_legandre_weights_x.dat", "r");
+       my_x=fopen("gauss_legandre_weights_x.dat", "r");
        
        %reset parameters
        int_1=0;
@@ -36,3 +36,5 @@ for pow=k
    key=key+1;
    fclose(my_f);
 end %end loop through k
+
+
